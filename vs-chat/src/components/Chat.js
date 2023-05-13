@@ -42,7 +42,10 @@ const Chat = () => {
   const [messages, setMessages] = useRecoilState(messageState);
   return (
     <>
-      <div className="overflow-auto bg-slate-500 m-5 p-5 rounded-lg h-96 flex-wrap">
+      <div
+        className="overflow-auto bg-slate-500 m-5 p-5 rounded-lg flex-wrap"
+        style={{ height: '60vh' }}
+      >
         {messages.map((message) =>
           message.sender === 'bot' ? BotMessage(message) : UserMessage(message)
         )}

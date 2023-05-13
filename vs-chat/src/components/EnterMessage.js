@@ -64,6 +64,8 @@ const EnterMessage = () => {
   console.log({ message });
 
   return (
+    // m-5 p-5 flex justify-center items-center bg-slate-500 rounded-lg
+    // m-1 p-1 flex justify-center items-center bg-slate-800 rounded-lg
     <div className="m-5 p-5 flex justify-center items-center bg-slate-500 rounded-lg">
       {/*//! input box, where you put in the message */}
       <input
@@ -72,6 +74,7 @@ const EnterMessage = () => {
         type="text"
         id="input"
         className="block 
+            shadow-xl
             w-full 
             p-4 
             m-3 
@@ -94,6 +97,7 @@ const EnterMessage = () => {
       <button
         onClick={addMessage}
         className="m-3 p-4
+            shadow-xl
             bg-white
             focus:ring-blue-500
             focus:border-blue-500
