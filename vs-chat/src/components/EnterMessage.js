@@ -5,6 +5,7 @@ import { messageState } from '../state/atoms/MessageState';
 import { idCounter } from '../state/atoms/IdCounter';
 
 // //! ChatGPT components (chatbot components)
+// import ChatBotResponseSetup from '../ChatBotResponseSetup.js';
 // import { OpenAI } from 'langchain/llms/openai';
 // import { HumanChatMessage, SystemChatMessage } from 'langchain/schema';
 
@@ -47,11 +48,14 @@ const EnterMessage = () => {
     setIdIndex(idIndex + 1); //! increment the index
     setMessages((prevMessages) => [
       ...prevMessages,
-      { key: idIndex, id: idIndex, content: message, sender: 'bot' },
+      { key: idIndex, id: idIndex, content: message, sender: 'user' },
     ]);
     /*
     TODO, use ChatGPT to send a message here...
     */
+    console.log('adding chatbot');
+    // ChatBot();
+    console.log('completing chatbot');
 
     setMessage('');
     console.log(messages);
