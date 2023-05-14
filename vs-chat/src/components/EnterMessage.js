@@ -61,7 +61,7 @@ const EnterMessage = () => {
     setMessage(event.target.value);
   };
 
-  console.log({ message });
+  //   console.log({ message });
 
   return (
     // m-5 p-5 flex justify-center items-center bg-slate-500 rounded-lg

@@ -10,7 +10,7 @@ const MainContent = () => {
     >
       <Chat />
       <EnterMessage />
-      {/* <FileUpload /> */}
+      <FileUpload />
     </div>
   );
 };
